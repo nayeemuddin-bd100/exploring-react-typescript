@@ -4,6 +4,7 @@ import Counter from "./components/Counter";
 import Heading from "./components/Heading";
 import List from "./components/List";
 import Section from "./components/Section";
+import HooksTs from "./hooks-ts/HooksTs";
 
 function App() {
 	const [count, setCount] = useState<number>(0);
@@ -27,6 +28,8 @@ function App() {
 				items={["Tea", "Coffee", "Drink"]}
 				render={(item: string) => <span> {item} </span>}
 			/>
+
+			<HooksTs />
 		</>
 	);
 }
